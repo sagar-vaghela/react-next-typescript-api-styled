@@ -22,8 +22,12 @@ export const ContainerWrapper = styled.div`
 
 export const ContainerBanner = styled.div``;
 
-export const ContainerCanvas = styled.canvas`
-  background-image: url("https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ");
+interface IUrl {
+  url: string;
+}
+
+export const ContainerCanvas = styled.canvas<IUrl>`
+  background-image: url(${(props) => props.url});
   display: block;
   width: 100%;
   background-position: center center;
@@ -53,10 +57,10 @@ export const ProfileDp = styled.div`
   justify-content: center;
 `;
 
-export const ProfileCanvas = styled.canvas`
+export const ProfileCanvas = styled.canvas<IUrl>`
   width: 150px !important;
   height: 150px;
-  background-image: url("https://gravatar.com/avatar/1a2e88d917a70ca43b39498ba1fc5d0a?s=80&d=https://static.codepen.io/assets/avatars/user-avatar-150x150-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png");
+  background-image: url(${(props) => props.url});
   display: block;
   width: 100%;
   background-position: center center;

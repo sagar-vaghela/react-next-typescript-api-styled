@@ -1,12 +1,12 @@
 import { FunctionComponent } from "react";
 import { ButtonContainer, ButtonText } from "./FetchButton.styles";
 
-type FetchButtonProps = {};
-const FetchButton: FunctionComponent<FetchButtonProps> = () => {
-  const fetchUserProfile = () => {
-    console.log("fetchUserProfile");
-  };
-
+type FetchButtonProps = {
+  fetchUserProfile(): void;
+};
+const FetchButton: FunctionComponent<FetchButtonProps> = ({
+  fetchUserProfile,
+}) => {
   return (
     <ButtonContainer onClick={fetchUserProfile}>
       <ButtonText>Fetch</ButtonText>
