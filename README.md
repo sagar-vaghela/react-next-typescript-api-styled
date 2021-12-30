@@ -1,6 +1,4 @@
-# NextJS Challenge - Elate Digital
-
-This repository contains a typical Elate Digital NextJS project that can be used for interview purposes.
+# React | Next.js | TypeScript | API | Styled
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and configured with:
 
@@ -18,7 +16,7 @@ The app has the following structure:
   All the presentation and business logic should be implemented as a view.
 - `views`: Contains the presentation elements for the pages. Can also include data and business logic.
 
-## The challenge
+## App Details
 
 The app contains only one page, with a "Fetch" button. The goal is to display a profile card like the following when
 the user presses the button:
@@ -29,14 +27,12 @@ the user presses the button:
 When the user presses the button, we replace the button with the `LoadingPlaceholder` component while we perform the
 fetch in the background. Then, replace it with the actual card.
 
-### Your tasks
+### Tasks -> what i did.
 
-1. Initialize Git on this repository.
-2. Create a `feature/implement-fetch-user-profile` branch, then work on that branch.
-3. Build a `ProfileCard` component similar to the one in the image. Use the same structure as in
+1. Build a `ProfileCard` component similar to the one in the image. Use the same structure as in
    `LoadingPlaceholder`. It doesn't have to be identical to the image (since you don't have the specific measures),
    but it should be as close as possible.
-4. Implement a custom hook in a `hooks` folder that encapsulates the fetching logic and holds the user profile values.
+2. Implement a custom hook in a `hooks` folder that encapsulates the fetching logic and holds the user profile values.
 
 ### Notes
 
@@ -44,16 +40,13 @@ fetch in the background. Then, replace it with the actual card.
    return the value to help visualize the placeholder component.
 2. Use [Axios](https://github.com/axios/axios) as the request library.
 
-### Evaluation
-
-These are the things we're looking to evaluate from you on this task:
+### Make sure below things for this app.
 
 1. _Structure of the code:_ both in terms of the actual code and the organization of files / folders.
 2. _React patterns:_ how efficient and well-structure your React code is.
 3. _TypeScript:_ how clear, helpful and explicit is your use of TypeScript.
 4. _Documentation:_ how clear and well commented your code is.
 5. _Git processes:_ how clear and well-structured your commits and commit messages are.
-6. _Attention to detail and extra features:_ is there anything else that you could add to make this simple flow better? Go for it, we love developers with initiative!
 
 ## Prerequisites
 
